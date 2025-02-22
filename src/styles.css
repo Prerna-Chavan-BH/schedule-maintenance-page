@@ -107,7 +107,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    gap: 80px; /* Adjusted for better spacing */
+    gap: 94px; /* Adjusted for better spacing */
     padding: 30px;
 }
 

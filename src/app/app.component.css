@@ -25,7 +25,6 @@
     }
 }
 
-
 /* Apply Variables */
 body {
     background-color: var(--background-color);
@@ -44,11 +43,6 @@ body {
     padding: 0;
     transition: background-color 0.3s ease, color 0.3s ease;
     overflow: hidden;
-}
-
-.img-container {
-    margin-right: 185px;
-    transform: translateX(80px);
 }
 
 .text-container {
@@ -115,8 +109,6 @@ body {
     z-index: 1000; /* ✅ Ensures it stays above other elements */
 }
 
-
-
 .header-logo-svg {
     font-family: 'Poppins';
     position: fixed;
@@ -145,13 +137,13 @@ body {
 
     
     /* Left Side - Logo & Text */
-    .footer1 {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        font-size: 14px;
-        color: var(--text-color, #fff);
-    }
+.footer1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+    color: var(--text-color, #fff);
+}
     
     /* Right Side - Links */
     .footer2 {
