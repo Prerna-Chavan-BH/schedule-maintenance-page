@@ -1,0 +1,182 @@
+/* Default Light Mode */
+:root {
+    --background-color: white;
+    --text-color: black;
+    --link-color: #00A783;
+}
+
+/* Dark Mode (when data-theme="dark") */
+[data-theme="dark"] {
+    --background-color: black;
+    --text-color: white;
+    --link-color: #02A783;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-container {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    max-width: 1000px;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.message {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    white-space: nowrap;
+}
+
+.time {
+    color: var(--link-color);
+    font-size: 24px;
+}
+
+.links {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.links a {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    width: 100%;
+    height: 30px;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    justify-content: space-between;
+    border-top: 2px solid #474646;
+}
+/* Light Mode (Default) */
+:root {
+    --background-color: white;
+    --text-color: black;
+    --link-color: #007BFF;
+}
+
+/* Dark Mode (Activated when data-theme="dark") */
+[data-theme="dark"] {
+    --background-color: black;
+    --text-color: white;
+    --link-color: #02A783;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Containers */
+.container {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    max-width: 1000px;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+/* General Text */
+.text {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.message {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    white-space: nowrap;
+}
+
+.time {
+    color: var(--link-color);
+    font-size: 24px;
+}
+
+/* Links */
+.links {
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.links a {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+    width: 100%;
+    height: 30px;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--text-color);
+    justify-content: space-between;
+    border-top: 2px solid #474646;
+}
