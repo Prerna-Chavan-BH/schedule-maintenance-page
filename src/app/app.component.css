@@ -1,145 +1,9 @@
-/* Default Light Theme */
-:root {
-    --background-color: white;
-    --text-color: black;
-    --secondary-text-color: rgba(0, 0, 0, 0.8);
-    --link-color: #007BFF;
-    --header-bg: #f5f5f5;
-    --footer-bg: #e0e0e0;
-    --border-color: #ccc;
-}
-
-/* Dark Mode */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background-color: black;
-        --text-color: white;
-        --secondary-text-color: rgba(255, 255, 255, 0.8);
-        --link-color: #02A783;
-        --header-bg: #2d2d2d;
-        --footer-bg: #111;
-        --border-color: #474646;
-    }
-}
-
-/* Apply Variables */
-body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Containers */
-.container {
-    margin-top: 70px;
-    margin-bottom: 70px;
-    max-width: 1000px;
-    text-align: left;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.img-container {
-    margin-right: 185px;
-    transform: translateX(80px);
-}
-
-.text-container {
-    text-align: left;
-    margin-top: 10px;
-    width: 691px;
-    height: 320px;
-    gap: 64px;
-}
-
-/* Images */
-.system-img {
-    width: 395px;
-    height: 313px;
-}
-
-/* Logo */
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: var(--text-color);
-}
-
-/* Text */
-.text {
-    color: var(--secondary-text-color);
-    font-size: 18px;
-}
-
-.message {
-    font-size: 48px;
-    margin-bottom: 10px;
-    color: var(--secondary-text-color);
-    white-space: nowrap;
-}
-
-.time {
-    color: var(--link-color);
-    font-size: 24px;
-}
-
-/* Links */
-.links {
-    color: var(--secondary-text-color);
-    font-size: 18px;
-}
-
-.links a {
-    color: var(--link-color);
-    text-decoration: underline;
-}
-
-/* Header */
-.header {
-    font-family: 'Poppins';
-    position: fixed;
-    top: 14px;
-    right: 32px;
-    bottom: 14px;
-    left: 20px;
-    z-index: 1;
-    width: 1,920px;
-    background-color: #2A2A2A;
-    display: flex;
-    align-items: center;
-    padding: 14px 32px;
-    height: 72px;
-    justify-content: space-between;
-    font-size: 14px;
-}
-
-.header-logo-svg {
-    width: 154px;
-    height: 32px;
-    margin-left: -30px;
-}
-
-/* Footer */
-.footer {
-    position: fixed;
-    bottom: 0;/* Default Light Theme */
 :root {
     --background-color: #ffffff;
-    --text-color: #000000;
+    --text-color: #595959;
     --secondary-text-color: rgba(0, 0, 0, 0.8);
     --link-color: #007BFF;
-    --header-bg: #f5f5f5;
+    --header-bg: #05322B;
     --footer-bg: #e0e0e0;
     --border-color: #ccc;
     --font-family: 'Poppins', sans-serif;
@@ -151,15 +15,16 @@ body {
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color: #000000;
-        --text-color: #ffffff;
+        --background-color: #121212;
+        --text-color: #FFFFFFCC;
         --secondary-text-color: rgba(255, 255, 255, 0.8);
         --link-color: #02A783;
-        --header-bg: #2d2d2d;
-        --footer-bg: #111;
-        --border-color: #474646;
+        --header-bg: #2A2A2A;
+        --footer-bg: #121212;
+        --border-color: #595959;
     }
 }
+
 
 /* Apply Variables */
 body {
@@ -176,19 +41,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 0;
     transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Containers */
-.container {
-    margin-top: 70px;
-    margin-bottom: 70px;
-    max-width: 1000px;
-    text-align: left;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    overflow: hidden;
 }
 
 .img-container {
@@ -199,9 +54,6 @@ body {
 .text-container {
     text-align: left;
     margin-top: 10px;
-    width: 691px;
-    height: 320px;
-    gap: 64px;
 }
 
 /* Images */
@@ -249,124 +101,82 @@ body {
 
 /* Header */
 .header {
-    font-family: var(--font-family);
     position: fixed;
-    top: 14px;
-    right: 32px;
-    bottom: 14px;
-    left: 20px;
-    z-index: 1;
-    width: 1920px;
-    background-color: #2A2A2A;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: var(--header-bg);
     display: flex;
     align-items: center;
-    padding: 14px 32px;
-    height: 72px;
-    justify-content: space-between;
+    padding: 14px 32px 14px 20px;
+    justify-content: flex-start;
     font-size: 14px;
+    z-index: 1000; /* ✅ Ensures it stays above other elements */
 }
+
+
 
 .header-logo-svg {
-    width: 154px;
-    height: 32px;
-    margin-left: -30px;
+    font-family: 'Poppins';
+    position: fixed;
+    left: 20px;    
+    width:  154px;
+    height:  32px;
+    gap: 40px;
 }
 
-/* Footer */
 .footer {
     position: fixed;
     bottom: 0;
     left: 0;
     font-size: 14px;
     width: 100%;
-    height: 30px;
-    background-color: var(--footer-bg);
+    height: 42px;
+    background-color: var(--footer-bg); /* Fallback in case var is undefined */
     display: flex;
     align-items: center;
     padding: 10px 20px;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--text-color, #fff); /* Ensure text adapts to theme */
     justify-content: space-between;
-    border-top: 2px solid var(--border-color);
+    border-top: 2px solid var(--border-color, #333); /* Border adapts */
 }
 
-.footer-logo-svg {
-    height: 25px;
-    margin-bottom: 2px;
-    margin-left: 30px;
-}
-
-.mark {
-    margin-left: -1200px;
-    font-family: var(--font-family);
-    color: var(--secondary-text-color);
-}
-
-.footer-links {
-    margin-left: 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    font-family: var(--font-family);
-    color: var(--secondary-text-color);
-}
-
-.footer-links a {
-    color: var(--text-color);
-    text-decoration: none;
-    margin-left: 10px;
-}
-
-.footer-links a:last-child {
-    margin-right: 60px;
-}
-    left: 0;
-    font-size: 14px;
-    width: 100%;
-    height: 30px;
-    background-color: var(--footer-bg);
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: var(--text-color);
-    justify-content: space-between;
-    border-top: 2px solid var(--border-color);
-}
-
-.footer-logo-svg {
-    height: 25px;
-    margin-bottom: 2px;
-    margin-left: 30px;
-}
-
-.mark {
-    margin-left: -1200px;
-    font-family: 'Poppins';
-    color: var(--secondary-text-color);
-}
-
-.footer-links {
-    margin-left: 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    font-family: 'Poppins';
-    color: var(--secondary-text-color);
-}
-
-.footer-links a {
-    color: var(--text-color);
-    text-decoration: none;
-    margin-left: 10px;
-}
-
-.footer-links a:last-child {
-    margin-right: 60px;
-}
+    
+    /* Left Side - Logo & Text */
+    .footer1 {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 14px;
+        color: var(--text-color, #fff);
+    }
+    
+    /* Right Side - Links */
+    .footer2 {
+        display: flex;
+        gap: 20px;
+        font-size: 14px;
+        justify-content: flex-end;
+        flex-wrap: nowrap;  /* Ensures items stay in one line */
+        max-width: 100%;  /* Prevents overflow */
+        overflow: visible; /* Allows text to be fully displayed */
+        white-space: normal; /* Ensures text wraps if needed */
+        padding-right: 50px;
+    }
+      
+    .footer2 a {
+        color: var(--text-color, #fff);
+        text-decoration: none;
+    }
+    
+    .footer2 a:hover {
+        text-decoration: underline;
+    }
+    
+    .footer-logo-svg {
+        height: 25px;
+        margin-bottom: 2px;
+        /* margin-left: 30px; */
+    }
